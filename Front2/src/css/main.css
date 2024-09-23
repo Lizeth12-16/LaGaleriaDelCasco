@@ -1,0 +1,226 @@
+.oswald-eventos {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-acerca {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+/* AQUI INICIA SECCION CATERGORIAS */
+.categories {
+    display: flex;
+    justify-content: center;
+    background-color:  #e3dbbc;
+    margin: 30px 0;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 60px;
+  }
+  
+  .category {
+    flex: 0 1 100px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  
+  .category:hover {
+    background-color: rgba(45, 70, 180, 0.863);
+  }
+  
+  .category img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .link_categorias {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 80px 0;
+  }
+  
+  .parrafo_categorias {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+/* AQUI FINALIZA SECCION CATERGORIAS */
+
+/* AQUI INICIA SECCION EVENTOS Y NOVEDADES */  
+.eventos-novedades {
+    background-color: #d1d1d1; /* Fondo claro */
+    padding: 40px 20px; /* Espaciado interno */
+    text-align:justify; /* Centrar texto */
+  }
+  
+  .eventos-novedades h2 {
+    font-size: 3rem; /* Tamaño del título */
+    margin-top: -10px; /* Espacio encima del título */
+    margin-bottom: 3rem; /* Espacio debajo del título */
+    color: #333; /* Color del texto */
+    text-align: center;
+  }
+  
+  .eventos-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los eventos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+  }
+  
+  .evento {
+    width: 30%; /* Ancho de cada evento */
+    height: 500px;
+    margin: 10px 15px; /* Espacio alrededor de cada evento */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Ocultar desbordamiento */
+    transition: transform 0.3s; /* Transición suave */
+  }
+  
+  .evento:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+  }
+  
+  .evento img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Mantener proporción */
+  }
+  .evento h3, .evento p, .evento a{
+    margin: 10px 30px;
+  }
+  .evento h3 {
+    font-size: 1.5rem; /* Tamaño del título del evento */
+  }
+  
+  .evento p {
+    font-size: 0.9rem; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+  }
+  .evento a{
+    color: #BF2A2A;
+  }
+
+/* AQUI FINALIZA SECCION EVENTOS Y NOVEDADES */  
+
+/* AQUI INICIA SECCION INFORMATIVA DESCUENTOS */
+.newsletter {
+    background-image: url('/public/img/Pista.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir todo el área */
+    background-position: center; /* Centrar la imagen */
+    color: #fff; /* Color del texto */
+    padding: 40px 20px;
+    text-align: left;
+    position: relative; /* Para el pseudo-elemento */
+    padding-left: 100px;
+    width: 100%;
+    height: 500px;
+    
+    background-color: #eee;
+  }
+  
+  .newsletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    filter: grayscale(100%); /* Filtro en blanco y negro */
+    z-index: 1; /* Asegura que el filtro esté por debajo del contenido */
+  }
+
+  .newsletter h2 {
+    padding-top: 100px;
+  }
+
+  .newsletter label h3{
+    font-size: 14px;
+    color: white;
+  }
+  
+
+  .newsletter p {
+    margin-bottom: 20px;
+  }
+
+  .newsletter h2, .newsletter p, .newsletter form {
+    position: relative; /* Para que el texto esté por encima del filtro */
+    z-index: 2; /* Asegura que el texto esté por encima del filtro */
+  
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+  }
+  
+  .newsletter input[type="email"]:focus {
+    outline: none; /* Sin contorno */
+    border-color: #FF3232; /* Color del borde al enfocar */
+  }
+
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #FF3232;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+    font-size: medium;
+  }
+
+  .newsletter button:hover {
+    background-color: #E60000; /* Color más oscuro al pasar el mouse */
+  }
+
+/* AQUI FINALIZA SECCION INFORMATIVA DESCUENTOS */
+
+
+/* AQUI INICIA SECCION ACERCA DE */
+
+.acerca{
+    background-color: #6fa2cb;
+    text-align: center;
+    height: 300px;
+
+  }
+  .acerca h1{
+    padding-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+  }
+  .acerca p{
+    padding: -20px;
+    margin: 0 100px;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+/* AQUI FINALIZA SECCION ACERCA DE */

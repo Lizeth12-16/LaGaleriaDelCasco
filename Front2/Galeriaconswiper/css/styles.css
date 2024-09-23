@@ -1,0 +1,1154 @@
+/* UNIVERSAL */
+* {
+  box-sizing: border-box;
+}
+
+/* POR ETIQUETAS */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: white;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 500px;
+  padding: 5px;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+/* AQUI FINALIZA ETIQUETAS */
+
+/* ID HEADER CUADRO BUSCAR */
+#search-input {
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  width: 300px;
+}
+
+#search-button,
+#clear-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-button img,
+#clear-button img {
+  width: 20px;
+  height: 20px;
+}
+/* AQUI TERMINA ID HEADER CUADRO BUSCAR */
+
+
+/* CLASES HEADER */
+.padre_header {
+  background-position: center;
+  background-size: cover;
+}
+
+/* CLASES BARRA INFORMATIVA */
+.fondo_informativa {
+  background-color: rgba(250, 78, 10, 0.336);
+  width: 100%;
+  padding: 0;
+}
+
+.hijo_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  gap: 10px;
+}
+
+.nietos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  margin: -10px;
+  padding: 10px 5px;
+  color: white;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+/* AQUI FINALIZA CLASES BARRA INFORMATIVA */
+
+/* CLASES PRIMERA BARRA NAVEGACION */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nieto_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 5px;
+  color: white;
+}
+
+.nieto_header:nth-child(2) {
+  flex: 9;
+}
+
+.nieto_header:not(:nth-child(2)) {
+  flex: 1;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid black;
+  /* Cuadro de buscar */
+}
+
+.buscar {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.buscar:hover {
+  background-color: rgba(250, 78, 10, 0.63);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icono_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.icono_nav img {
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+/* AQUI TERMINA CLASES PRIMERA BARRA */
+
+/* CLASES SEGUNDA BARRA */
+.menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: rgba(250, 78, 10, 0.63);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu_hijo {
+  margin: 10px;
+  padding: 10px;
+}
+/* AQUI TERMINA CLASES SEGUNDA BARRA */
+
+
+/* CLASES CATEGORIAS */
+.categories {
+  display: flex;
+  justify-content: center;
+  background-color:  #e3dbbc;
+  margin: 30px 0;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  gap: 60px;
+}
+
+.category {
+  flex: 0 1 100px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.category:hover {
+  background-color: rgba(45, 70, 180, 0.863);
+}
+
+.category img {
+  width: 80px;
+  height: auto;
+}
+
+.link_categorias {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 80px 0;
+}
+
+.parrafo_categorias {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+/* AQUI TERMINA CLASES CATEGORIAS */
+
+.newsletter {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eee;
+}
+
+.newsletter h2 {
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #D8D8D8;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .footer-info,
+footer .footer-links,
+footer .footer-more-links,
+footer .footer-social,
+footer .footer-legal {
+  flex: 1;
+  margin: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+footer .footer-legal {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-legal{
+  background-color: white;
+}
+
+.imagen_inicial {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imagen_inicial img {
+  width: 100%;
+  height: 500px;
+  /* Mantiene la proporción de la imagen */
+
+}
+
+/*Estilos del modal inicio de sesion y/o registro*/
+
+
+
+header {
+  height: 500px;
+  padding: 5px;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+/* AQUI FINALIZA ETIQUETAS */
+
+/* ID HEADER CUADRO BUSCAR */
+#search-input {
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  width: 300px;
+}
+
+#search-button,
+#clear-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-button img,
+#clear-button img {
+  width: 20px;
+  height: 20px;
+}
+/* AQUI TERMINA ID HEADER CUADRO BUSCAR */
+
+
+/* CLASES HEADER */
+.padre_header {
+  background-image: url('../img/moto_inicial.jpg');
+  background-position: center 15%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: cambio-fondo 30s infinite; /* Añadir animación */
+}
+/* Se hace el cambio entre diferentes imagenes */
+@keyframes cambio-fondo {
+  0% { background-image: url('../img/moto_inicial.jpg'); }
+  33% { background-image: url('../img/shaft.png');}
+  66% { background-image: url('../img/camion.png'); }
+  100% { background-image: url('../img/moto_inicial.jpg'); }
+}
+
+/* CLASES BARRA INFORMATIVA */
+.fondo_informativa {
+  background-color: rgba(250, 78, 10, 0.336);
+  margin: -15px auto;
+}
+
+.hijo_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  gap: 10px;
+}
+
+.nietos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  margin: -10px;
+  padding: 10px 5px;
+  color: white;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+/* AQUI FINALIZA CLASES BARRA INFORMATIVA */
+
+/* CLASES PRIMERA BARRA NAVEGACION */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nieto_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 5px;
+  color: white;
+}
+
+.nieto_header:nth-child(2) {
+  flex: 9;
+}
+
+.nieto_header:not(:nth-child(2)) {
+  flex: 1;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid black;
+  /* Cuadro de buscar */
+}
+
+.buscar {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.buscar:hover {
+  background-color: rgba(250, 78, 10, 0.63);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icono_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.icono_nav img {
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+/* AQUI TERMINA CLASES PRIMERA BARRA */
+
+/* CLASES SEGUNDA BARRA */
+.menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: rgba(250, 78, 10, 0.63);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu_hijo {
+  margin: 10px;
+  padding: 10px;
+}
+/* AQUI TERMINA CLASES SEGUNDA BARRA */
+
+
+/* CLASES CATEGORIAS */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:  #e3dbbc;
+  margin: 30px 0;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  gap: 60px;
+}
+
+.category {
+  flex: 0 1 100px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.category:hover {
+  background-color: rgba(45, 70, 180, 0.863);
+}
+
+.category img {
+  width: 80px;
+  height: auto;
+}
+
+.link_categorias {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 80px 0;
+}
+
+.parrafo_categorias {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+/* AQUI TERMINA CLASES CATEGORIAS */
+/* Estilos para la sección de Eventos-Novedades */
+.eventos-novedades {
+  background-color: #d1d1d1; /* Fondo claro */
+  padding: 40px 20px; /* Espaciado interno */
+  text-align:justify; /* Centrar texto */
+}
+
+.eventos-novedades h2 {
+  font-size: 2rem; /* Tamaño del título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #333; /* Color del texto */
+}
+
+.eventos-container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los eventos */
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+}
+
+.evento {
+  width: 30%; /* Ancho de cada evento */
+  height: 500px;
+  margin: 10px 15px; /* Espacio alrededor de cada evento */
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  overflow: hidden; /* Ocultar desbordamiento */
+  transition: transform 0.3s; /* Transición suave */
+}
+
+.evento:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.evento img {
+  width: 100%; /* Ancho completo */
+  height: auto; /* Mantener proporción */
+}
+.evento h3, .evento p, .evento a{
+  margin: 10px 30px;
+}
+.evento h3 {
+  font-size: 1.5rem; /* Tamaño del título del evento */
+}
+
+.evento p {
+  font-size: 0.9rem; /* Tamaño del texto */
+  color: #666; /* Color del texto */
+}
+.evento a{
+  color: #BF2A2A;
+}
+
+/* newsletter */
+
+.newsletter {
+  background-image: url('../img/pista.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Cubrir todo el área */
+  background-position: center; /* Centrar la imagen */
+  color: #fff; /* Color del texto */
+  padding: 40px 20px; /* Espaciado interno */
+  text-align:left; /* Centrar texto */
+  position: relative; /* Para el pseudo-elemento */
+  padding-left: 100px;
+  width: 100%;
+  height: 500px;
+}
+
+.newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  filter: grayscale(100%); /* Filtro en blanco y negro */
+  z-index: 1; /* Asegura que el filtro esté por debajo del contenido */
+}
+
+.newsletter h2{
+  padding-top: 100px;
+}
+.newsletter label h3{
+  font-size: 14px;
+  color: white;
+}
+
+.newsletter img{
+  border-radius: 8px;
+  width: 400px;
+  height: auto;
+}
+
+
+.newsletter h2, .newsletter p {
+  position: relative; /* Para que el texto esté por encima del filtro */
+  z-index: 2; /* Asegura que el texto esté por encima del filtro */
+
+}
+
+.newsletter form {
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px; /* Espaciado interno */
+  width: 300px; /* Ancho del campo de entrada */
+  
+  border: 2px solid #fff; /* Borde blanco */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+  color: #333; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: border-color 0.3s; /* Transición suave para el borde */
+  
+}
+.newsletter input[type="email"]:focus {
+  outline: none; /* Sin contorno */
+  border-color: #FF3232; /* Color del borde al enfocar */
+}
+
+.newsletter button {
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #FF3232; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.newsletter button:hover {
+  background-color: #E60000; /* Color más oscuro al pasar el mouse */
+}
+
+/*TERMINA NEWS*/
+
+.about {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  text-align: center;
+  line-height: 1.6;
+}
+/* Acerca  */
+.acerca{
+  background-color: #6fa2cb;
+  text-align: center;
+  height: 200px;
+}
+.acerca h1{
+  padding-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3rem;
+}
+.acerca p{
+  padding: -20px;
+  margin: 0 100px;
+  font-size:large;
+}
+
+/*inicio footer*/
+footer {
+  background-color: #D8D8D8;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  color:#000000;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section {
+  flex: 1;
+  margin-left: 20px;
+  color:#646464;
+}
+
+.footer-section h3 {
+  color: #FF3232;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.footer-bottom p {
+  color: #FF3232;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.footer-legal {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espacio entre los elementos */
+  flex-wrap: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
+}
+
+.footer-legal p {
+  margin: 0; /* Elimina el margen */
+  display: flex;
+  flex-wrap: nowrap; /* Asegura que el contenido no se rompa en varias líneas */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.footer-legal a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px; /* Espacio entre los enlaces */
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*fin footer*/
+.imagen_inicial {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imagen_inicial img {
+  width: 100%;
+  height: 500px;
+  /* Mantiene la proporción de la imagen */
+
+}
+
+/*Estilos del modal inicio de sesion y/o registro*/
+
+/* Modal */
+.modal {
+  display: none; /* Oculta el modal por defecto */
+  position: fixed; /* Posición fija en la pantalla */
+  z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  height: 100%; /* Ocupa toda la altura de la pantalla */
+  overflow: auto; /* Permite desplazamiento si el contenido es mayor que la pantalla */
+  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+  text-align: center; /* Centra el contenido horizontalmente */
+  backdrop-filter: blur(3px); /* Hace que el fondo sea borroso */
+}
+
+/* Contenido del modal */
+.modal-content {
+  background: #13232f; /* Color de fondo del contenido del modal */
+  margin: 5% auto; /* Margen superior y centrado horizontal */
+  padding: 20px;
+  width: 600px; /* Ancho fijo del contenido */
+  height: fit-content; /* Altura ajustada al contenido */
+  position: relative;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+  display: inline-block;
+  overflow: auto; /* Permite desplazamiento si el contenido es muy largo */
+  
+}
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(black,.5);
+  transition: all 0.25s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+  
+  .req {
+      opacity: 0;
+  }
+}
+.contenedor-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  
+  :after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  li a {
+
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(#a0b3b0,.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+    }
+  li:hover {
+    background: darken(#BF2A2A,5%);
+    color: white;
+  }
+  
+  .active a {
+  background: #BF2A2A;
+  color: white;
+  }
+}
+
+input {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  border-radius: 0;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  
+}
+
+input:focus {
+  outline: none;
+  border-color: #BF2A2A;
+}
+
+.contenido-tab > div:last-child {
+  display: none;
+}
+
+.req {
+  margin: 2px;
+  color: #BF2A2A;
+}
+
+.modal-content h1{
+  color:#BF2A2A;
+}
+
+/* Pseudo-elemento para centrar verticalmente el modal */
+.modal::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* Estilos para los formularios dentro del modal */
+.modal-content form {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center;
+  width: 100%;
+  max-width: 300px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario */
+  
+}
+
+/* color principal #1ab188*/
+.contenedor-input {
+  position: relative;
+  margin-bottom: 40px;
+}
+.modal-content form label{
+  color: #fff;
+}
+
+/* Estilos para los botones del formulario */
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 2rem;
+  background: #8f1f1f;
+  color: #fff;
+  transition: all .5s ease;
+}
+
+.button:hover, button:focus {
+  background: lighten(#BF2A2A,5%);
+}
+
+/* Estilos para los encabezados dentro del modal */
+.modal-content form p a {
+  color: #BF2A2A;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos dentro del modal */
+.modal-content p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Estilos para los enlaces dentro del modal */
+.modal-content a {
+  color: #FF3232; /* Color rojo para los enlaces */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Efecto hover para los enlaces */
+.modal-content a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del botón de cerrar */
+.close {
+  color: #BF2A2A;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+/* Efecto hover y focus para el botón de cerrar */
+.close:hover,
+.close:focus {
+  color: #333; /* Color más oscuro al pasar el mouse o enfocar */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para los botones de inicio de sesión y registro */
+.btn-login, .btn-register {
+  background-color: #FF3232; /* Color de fondo rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover para los botones de inicio de sesión y registro */
+.btn-login:hover, .btn-register:hover {
+  background-color: #E60000; /* Color de fondo más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Estilo específico para el botón de registro */
+.btn-register {
+  background-color: #2196F3; /* Color de fondo azul */
+}
+
+/* Efecto hover para el botón de registro */
+.btn-register:hover {
+  background-color: #0D47A1; /* Color de fondo azul más oscuro al pasar el mouse */
+}
+
+/* Modal Inicio de la pagina */
+
+
+.back-inicio {
+  display: none; /* Oculta el modal por defecto */
+  position: fixed; /* Posición fija en la pantalla */
+  z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  height: 100%; /* Ocupa toda la altura de la pantalla */
+  overflow: auto; /* Permite desplazamiento si el contenido es mayor que la pantalla */
+  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+  text-align: center; /* Centra el contenido horizontalmente */
+  backdrop-filter: blur(3px); /* Hace que el fondo sea borroso */
+  padding-top: 15%;
+}
+
+/* Contenido del modal */
+.modal-content-ini {
+  background: #13232f; /* Color de fondo del contenido del modal */
+  margin: 5% auto; /* Margen superior y centrado horizontal */
+  padding: 20px;
+  width: 600px; /* Ancho fijo del contenido */
+  height: fit-content; /* Altura ajustada al contenido */
+  position: relative;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+  display: inline-block;
+  overflow: auto; /* Permite desplazamiento si el contenido es muy largo */
+  color:#fff;
+  
+}
+
+.regis{
+  color:#8f1f1f;
+}
+
+/* Estilos para la barra lateral */
+.barra-lateral {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%);
+  background-color: #FF3232; /* Fondo claro */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: none; /* Oculto por defecto */
+  z-index: 999; /* Por encima del contenido */
+  writing-mode: vertical-rl; /* Cambia la dirección del texto a vertical */
+  text-align: center; /* Centra el texto */
+}
+
+.barra-lateral p {
+  margin: 0;
+  cursor: pointer;
+  color: #fff; /* Color de texto */
+}

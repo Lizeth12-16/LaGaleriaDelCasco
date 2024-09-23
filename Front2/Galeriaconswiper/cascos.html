@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Galería del Casco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/galery.css">
+</head>
+<body>
+    <header class="padre_header">
+
+        <div class="fondo_informativa">
+            <div class="hijo_header"> <!-- aqui inicia barra informativa-->
+
+                <div class="nietos"> <!-- inicio icono camion-->
+                    <img class="iconos" src="img/camion.png" alt="icono camion">
+                    <p class="parrafo_header">Envíos hh Seguros</p>
+                </div> <!-- fin icono camion-->
+
+                <div class="nietos"> <!-- inicio icono devolucion-->
+                    <img class="iconos" src="img/devoluciones.png" alt="icono camion">
+                    <p class="parrafo_header">Devolución 30 Días Gratis</p>
+                </div> <!-- fin icono devolucion-->
+
+                <div class="nietos"> <!-- inicio icono garantia-->
+                    <img class="iconos" src="img/garantia.png" alt="icono camion">
+                    <p class="parrafo_header">El mejor Precio Garantizado</p>
+                </div> <!-- fin icono garantia-->
+
+            </div> <!-- aqui finaliza barra informativa-->
+        </div>
+
+        <nav class="navegacion"> <!-- aqui empieza primer barra navegación-->
+            <div class="nieto_header"> <!-- incio boton de logo-->
+                <a href="index.html">
+                    <img class="iconos" src="/img/logo_letras.jpg" alt="Logo de la Tienda">
+                </a>
+            </div> <!-- fin boton de logo-->
+
+            <div class="nieto_header">
+                <form action="https://www.google.com/search" method="get">
+                    <div class="search-container">
+                        <button type="submit" id="search-button">
+                            <img src="img/lupa.png" alt="Buscar">
+                        </button>
+                        <input type="text" id="search-input" name="q" placeholder="Buscar...">
+
+                        <button type="button" id="clear-button">
+                            <img src="/img/borrar.png" alt="Limpiar">
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="nieto_header"> <!-- incio boton de favorito-->
+                <a class="buscar" href="#">
+                    <img class="icono_nav" src="img/favorito.png" alt="icono favoritos">
+                    FAVORITOS
+                </a>
+            </div> <!-- fin boton de favorito-->
+            <!-- incio boton perfil-->
+            <div class="nieto_header">
+                <a id="open-modal" class="buscar" href="#modal-login">
+                <img class="icono_nav" src="img/avatar.png" alt="icono avatar">
+                    CUENTA
+                </a>
+            </div>
+
+            <div id="modal-login" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <div class="contenedor-formularios">
+                        
+                        <div class="contenido-tab">
+                            <!-- Iniciar Sesión -->
+                            <div id="iniciar-sesion">
+                                <h1 class="btn-tabs">Iniciar Sesión</h1>
+                                <form action="#" method="post">
+                                    <div class="contenedor-input">
+                                        <label>
+                                            Usuario <span class="req">*</span>
+                                        </label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <label>
+                                            Contraseña <span class="req">*</span>
+                                        </label>
+                                        <input type="password" required>
+                                    </div>
+                                    <p class="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
+                                    <input type="submit" class="button button-block" value="Iniciar Sesión">
+                                    <p class="tab tab-primera">¿Aún no estás registrado? <a href="#registrarse" id="show-register">¡Regístrate!</a></p>
+                                </form>
+                            </div>
+            
+                            <!-- Registrarse -->
+                            <div id="registrarse">
+                                <h1 class="btn-tabs">Registrarse</h1>
+                                <form action="#" method="post">
+                                    <div class="fila-arriba">
+                                        <div class="contenedor-input">
+                                            <label>
+                                                Nombre <span class="req">*</span>
+                                            </label>
+                                            <input type="text" required>
+                                        </div>
+                                        <div class="contenedor-input">
+                                            <label>
+                                                Apellido <span class="req">*</span>
+                                            </label>
+                                            <input type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <label>
+                                            Usuario <span class="req">*</span>
+                                        </label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <label>
+                                            Email <span class="req">*</span>
+                                        </label>
+                                        <input type="email" required>
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <label>
+                                            Contraseña <span class="req">*</span>
+                                        </label>
+                                        <input type="password" required>
+                                    </div>
+                                    <div class="contenedor-input">
+                                        <label>
+                                            Repetir Contraseña <span class="req">*</span>
+                                        </label>
+                                        <input type="password" required>
+                                    </div>
+                                    <input type="submit" class="button button-block" value="Registrarse">
+                                    <p class="tab tab-segunda active">¿Ya estas registrado?<a href="#iniciar-sesion">¡Iniciar Sesión!</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- fin boton perfil-->
+
+            <div class="nieto_header"> <!-- incio boton de carrito-->
+                <a class="buscar" href="#">
+                    <img class="icono_nav" src="img/carrito-de-compras.png" alt="icono carrito">
+                    CARRITO
+                </a>
+            </div> <!-- fin boton de carrito-->
+        </nav> <!-- aqui termina primer barra navegación-->
+
+        <nav class="menu"> <!-- aqui inicia segunda barra navegación-->
+            <a class="menu_hijo" href="cascos.html">CASCOS</a>
+            <a class="menu_hijo" href="#">EQUIPACION DE CARRETERA</a>
+            <a class="menu_hijo" href="#">ACCESORIOS DE MOTO</a>
+            <a class="menu_hijo" href="#">COMBOS</a>
+            <a class="menu_hijo" href="#">OUTLET</a>
+        </nav> <!-- aqui termina segunda barra navegación-->
+    </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/shaft.png" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$600.000</span>
+                            <h3>SH-PRO612DV</h3>
+                            <p>Casco con spoiler agresivo, ventilación completa y diseño estilizado para mayor comodidad y rendimiento en moto.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/Casco Shaft.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-1">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$9999999</span>
+                            <h3>Shaft Shark</h3>
+                            <p>holaq</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/casco.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-2">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$95</span>
+                            <h3>Shaft Shark</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-3">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$95</span>
+                            <h3>Shaft Shark</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-4">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$95</span>
+                            <h3>Shaft Shark</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-5">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$95</span>
+                            <h3>Shaft Shark</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-6">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$95</span>
+                            <h3>Shaft Shark</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-7">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$95</span>
+                            <h3>Shaft Shark</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-8">Comprar</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="img/" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>$95</span>
+                            <h3>Shaft Shark</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-9">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/galeriaswipper.js"></script>
+        <script src="js/galeria.js"></script>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo de la Galería del Casco">
+                <p>LA GALERIA DEL CASCO<br>
+                    AV. CARACAS #17 - 47, 51<br>
+                    BOGOTÁ, DISTRITO ESPECIAL, COLOMBIA<br>
+                    INFO-TIENDA@GMAIL.COM
+                </p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>MOTORISTA</h3>
+                <ul>
+                    <li>CASCOS</li>
+                    <li>CHAQUETAS</li>
+                    <li>PANTALONES</li>
+                    <li>GUANTES</li>
+                    <li>BOTAS</li>
+                    <li>MONOS</li>
+                    <li>PROTECCIONES</li>
+                    <li>TÉRMICOS Y CONFORT</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>MOTO</h3>
+                <ul>
+                    <li>PLÁSTICOS MOTO</li>
+                    <li>EQUIPAJE</li>
+                    <li>ANTIRROBOS</li>
+                    <li>FILTROS AIRE</li>
+                    <li>ELECTRÓNICA</li>
+                    <li>LIMPIEZA</li>
+                    <li>MANTENIMIENTO</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>NOSOTROS</h3>
+                <ul>
+                    <li>QUIENES SÓMOS</li>
+                    <li>CONTACTANOS</li>
+                    <li>PRECIOS GARANTIZADOS</li>
+                    <li>REGISTRO DE USUARIOS</li>
+                    <li>TARJETA REGALO</li>
+                    <li>PREGUNTAS</li>
+                    <li>UBICACIÓN</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>¡SÍGUENOS!</p>
+            <div class="social-media">
+                <img src="./img/facebook.png" alt="Facebook">
+                <img src="./img/instagram.png" alt="Instagram">
+                <img src="./img/youtube.png" alt="YouTube"> 
+            </div>
+        </div>
+    
+        <div class="footer-legal">
+            <p>© LA GALERIA DEL CASCO. TODOS LOS DERECHOS RESERVADOS |
+                <a href="#">TÉRMINOS Y CONDICIONES</a> |
+                <a href="#">AVISO LEGAL</a> |
+                <a href="#">POLÍTICA DE PRIVACIDAD</a> |
+                <a href="#">POLÍTICA DE COOKIES</a> |
+                © 2024
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>

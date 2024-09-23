@@ -1,0 +1,202 @@
+/* UNIVERSAL */
+* {
+  box-sizing: border-box;
+}
+
+/* POR ETIQUETAS */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: white;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 500px;
+  padding: 5px;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+/* AQUI FINALIZA ETIQUETAS */
+
+/* ID HEADER CUADRO BUSCAR */
+#search-input {
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  width: 300px;
+}
+
+#search-button,
+#clear-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-button img,
+#clear-button img {
+  width: 20px;
+  height: 20px;
+}
+/* AQUI TERMINA ID HEADER CUADRO BUSCAR */
+
+
+/* CLASES HEADER */
+.padre_header {
+  background-image: url('/public/img/moto_inicial.jpg');
+  background-position: center 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* animation: cambio-fondo 30s infinite; */ /* Añadir animación */
+}
+
+/* CLASES BARRA INFORMATIVA */
+.fondo_informativa {
+  background-color: rgba(250, 78, 10, 0.336);
+  width: 100%;
+  padding: 0;
+}
+
+.hijo_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  gap: 10px;
+}
+
+.nietos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  margin: -10px;
+  padding: 10px 5px;
+  color: white;
+}
+
+.parrafo_header {
+  margin-top: 15px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+/* AQUI FINALIZA CLASES BARRA INFORMATIVA */
+
+/* CLASES PRIMERA BARRA NAVEGACION */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nieto_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 5px;
+  color: white;
+}
+
+.nieto_header:nth-child(2) {
+  flex: 9;
+}
+
+.nieto_header:not(:nth-child(2)) {
+  flex: 1;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid black;
+  /* Cuadro de buscar */
+}
+
+.buscar {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.buscar:hover {
+  background-color: rgba(250, 78, 10, 0.63);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icono_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.icono_nav img {
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+/* AQUI TERMINA CLASES PRIMERA BARRA */
+
+
+/*_________________________________________*/
+
+
+/* AQUI INCIIA CLASES SEGUNDA BARRA */
+
+.menu {
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.menu a {
+color: #fff;
+margin: 0 15px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.menu a:hover {
+color: #000000; /* preguntar grupo color */
+background-color: rgba(250, 78, 10, 0.63);
+padding: 10px;
+border-radius: 5px;
+}
+
+.menu_hijo {
+margin: 10px;
+padding: 10px;
+}
